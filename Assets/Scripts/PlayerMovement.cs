@@ -61,4 +61,9 @@ public class PlayerMovement : MonoBehaviour
         }
         if(_inAir == false) _rigidbody2d.velocity += _jumpInput;
     }
+
+    void OnQuitGame()
+    {
+        Application.Quit();
+    }
 }
