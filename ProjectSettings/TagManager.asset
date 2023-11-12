@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Wall
+  - ExitToTitleScreen
   layers:
   - Default
   - TransparentFX
