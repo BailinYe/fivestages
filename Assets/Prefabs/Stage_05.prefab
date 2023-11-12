@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3155410281334117059}
   m_Layer: 0
   m_Name: TriggerObject 1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897b4b565f5d3214cb81520dbb6848d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timer: 1
+  _timer: 0.1
   _updateFinished:
     m_PersistentCalls:
       m_Calls:
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 1661018035788917128}
   m_Layer: 0
   m_Name: TriggerObject 4 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897b4b565f5d3214cb81520dbb6848d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timer: 1
+  _timer: 0.1
   _updateFinished:
     m_PersistentCalls:
       m_Calls:
@@ -332,7 +332,7 @@ GameObject:
   - component: {fileID: 3203811520935712291}
   m_Layer: 0
   m_Name: TriggerObject 2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897b4b565f5d3214cb81520dbb6848d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timer: 1
+  _timer: 0.1
   _updateFinished:
     m_PersistentCalls:
       m_Calls:
@@ -553,7 +553,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 128654946111588125}
   m_Layer: 0
   m_Name: TriggerObject 3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -778,7 +778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897b4b565f5d3214cb81520dbb6848d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timer: 1
+  _timer: 0.1
   _updateFinished:
     m_PersistentCalls:
       m_Calls:
@@ -808,7 +808,7 @@ GameObject:
   - component: {fileID: 7582646490784427207}
   m_Layer: 0
   m_Name: TriggerObject 1 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -937,7 +937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897b4b565f5d3214cb81520dbb6848d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timer: 1
+  _timer: 0.1
   _updateFinished:
     m_PersistentCalls:
       m_Calls:
@@ -967,7 +967,7 @@ GameObject:
   - component: {fileID: 7681767074023375333}
   m_Layer: 0
   m_Name: TriggerObject 3 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1096,7 +1096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897b4b565f5d3214cb81520dbb6848d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timer: 1
+  _timer: 0.1
   _updateFinished:
     m_PersistentCalls:
       m_Calls:
@@ -1126,7 +1126,7 @@ GameObject:
   - component: {fileID: 7101296894874934939}
   m_Layer: 0
   m_Name: TriggerExit (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1256,7 +1256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _groundExit: {fileID: 6810414726986436323}
-  _totalTriggersNeeded: 0
+  _totalTriggersNeeded: 10
 --- !u!1 &6780813088934851799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,7 +1271,7 @@ GameObject:
   - component: {fileID: 3701850514290034642}
   m_Layer: 0
   m_Name: TriggerObject 3 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1400,7 +1400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897b4b565f5d3214cb81520dbb6848d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timer: 1
+  _timer: 0.1
   _updateFinished:
     m_PersistentCalls:
       m_Calls:
@@ -1492,7 +1492,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1672,7 +1672,7 @@ GameObject:
   - component: {fileID: 3222464891590207412}
   m_Layer: 0
   m_Name: TriggerObject 3 (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1801,7 +1801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897b4b565f5d3214cb81520dbb6848d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timer: 1
+  _timer: 0.1
   _updateFinished:
     m_PersistentCalls:
       m_Calls:
@@ -1831,7 +1831,7 @@ GameObject:
   - component: {fileID: 776666924509103345}
   m_Layer: 0
   m_Name: TriggerObject 2 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1960,7 +1960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897b4b565f5d3214cb81520dbb6848d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timer: 1
+  _timer: 0.1
   _updateFinished:
     m_PersistentCalls:
       m_Calls:
@@ -1990,7 +1990,7 @@ GameObject:
   - component: {fileID: 2287523402184010652}
   m_Layer: 0
   m_Name: TriggerObject 4
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2119,7 +2119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897b4b565f5d3214cb81520dbb6848d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timer: 1
+  _timer: 0.1
   _updateFinished:
     m_PersistentCalls:
       m_Calls:
