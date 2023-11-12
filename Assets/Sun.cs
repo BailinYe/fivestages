@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 
 public class Sun : MonoBehaviour
 {
-    private Transform lightSource;
+    public Transform lightSource;
     private Vector2 midPoint ;
     private object thisObject;
     private float movedDistance;
@@ -26,23 +26,23 @@ public class Sun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(movedDistance < 10) { 
-            this.transform.transform.position = transform.position + (Vector3.left * floatSpeed * Time.deltaTime);
-        }
-        else
-        {
-            this.transform.transform.position = transform.position + (Vector3.right * floatSpeed * Time.deltaTime);
-            if (movedDistance > 20)
-            {
-                movedDistance = 0;
-            }
-        }
-        movedDistance += floatSpeed * Time.deltaTime;
+        //if(movedDistance < 10) { 
+        //    this.transform.transform.position = transform.position + (Vector3.left * floatSpeed * Time.deltaTime);
+        //}
+        //else
+        //{
+        //    this.transform.transform.position = transform.position + (Vector3.right * floatSpeed * Time.deltaTime);
+        //    if (movedDistance > 20)
+        //    {
+        //        movedDistance = 0;
+        //    }
+        //}
+        //movedDistance += floatSpeed * Time.deltaTime;
         //gameObject.GetComponent<Rigidbody>().useGravity = false;
 
     }
 
-    Vector2 getLightResource()
+    public Vector2 getLightResource()
     {
 
         return (new Vector2(lightSource.position.x, lightSource.position.y));
