@@ -11,6 +11,7 @@ public class TriggerObject : MonoBehaviour
     [SerializeField]
     private UnityEvent _updateFinished;
 
+
     public void UpdateTimer()
     {
         if (_isFinished) return;
@@ -21,6 +22,8 @@ public class TriggerObject : MonoBehaviour
             _timer = 0;
             _isFinished = true;
             print("FINISHED");
+            transform.GetChild(0).gameObject.SetActive(false);
+            transform.GetChild(1).gameObject.SetActive(true);
             _updateFinished.Invoke();
         }
     }
