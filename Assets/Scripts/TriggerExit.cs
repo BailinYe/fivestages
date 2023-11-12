@@ -10,8 +10,6 @@ public class TriggerExit : MonoBehaviour
     private GameObject _groundExit;
     [SerializeField]
     private int _totalTriggersNeeded;
-    [SerializeField]
-    private UnityEvent _exitEvent;
     private int _currentTriggerNumber = 0;
 
     public void UpdateCurrentTriggerNumber()
@@ -29,12 +27,16 @@ public class TriggerExit : MonoBehaviour
         if (_currentTriggerNumber >= _totalTriggersNeeded)
         {
             _groundExit.SetActive(false);
-            _exitEvent.Invoke();
+            FindObjectOfType<CameraMove>().StartCameraMove();
             gameObject.SetActive(false);
+        }
+        if(gameObject.tag == "ExitToTitleScreen")
+        {
+            ExitToTitleScreen();
         }
     }
 
-    public void ExitToTitleScreen()
+    private void ExitToTitleScreen()
     {
         SceneManager.LoadScene(0);
     }
