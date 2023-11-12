@@ -36,13 +36,28 @@ public class PlayerMovement : MonoBehaviour
             _inAir = false;
         }
     }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        //print("On Ground");
+        if (collision.transform.tag == "Ground")
+        {
+            _inAir = false;
+        }
+    }
     private void OnCollisionExit2D(Collision2D collision)
     {
         //print("In Air");
         if (collision.transform.tag == "Ground") _inAir = true;
     }
 
-
+    public void StopInput()
+    {
+        GetComponent<PlayerInput>().currentActionMap.Disable();
+    }
+    public void StartInput()
+    {
+        GetComponent<PlayerInput>().currentActionMap.Enable();
+    }
     void OnMovement(InputValue l_value)
     {
         //print("MOVE: " + l_value.Get<Vector2>());
