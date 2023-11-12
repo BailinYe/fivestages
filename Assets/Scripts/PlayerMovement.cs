@@ -31,12 +31,15 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //print("On Ground");
-        _inAir = false;
+        if(collision.transform.tag == "Ground")
+        {
+            _inAir = false;
+        }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
         //print("In Air");
-        _inAir = true;
+        if (collision.transform.tag == "Ground") _inAir = true;
     }
 
 
@@ -49,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump(InputValue l_value)
     {
+        if (_inAir) return;
         //print("Jump:" + l_value.isPressed);
         if (l_value.isPressed)
         {
