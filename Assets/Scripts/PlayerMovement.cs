@@ -27,6 +27,29 @@ public class PlayerMovement : MonoBehaviour
         _rigidbody2d.velocity = currentMovement;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "Water")
+        {
+            _inAir = false;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "Water")
+        {
+            _inAir = false;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "Water")
+        {
+            _inAir = true;
+        }
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
