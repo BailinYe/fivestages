@@ -30,6 +30,7 @@ public class TriggerExit : MonoBehaviour
         {
             _groundExit.SetActive(false);
             _exitEvent.Invoke();
+            gameObject.SetActive(false);
         }
     }
 
