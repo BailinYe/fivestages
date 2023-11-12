@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -64,6 +65,6 @@ public class PlayerMovement : MonoBehaviour
 
     void OnQuitGame()
     {
-        Application.Quit();
+        SceneManager.LoadScene(0);
     }
 }
